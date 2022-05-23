@@ -1,0 +1,329 @@
+* *::before *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Public-Sans", san-serif;
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  background-color: hsl(140, 11%, 89%);
+}
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.nav-ul li,
+.nav-ul a {
+  color: hsl(233, 10%, 51%);
+  list-style: none;
+  padding: 1.5rem;
+  text-decoration: none;
+}
+.nav-ul a:hover {
+  color: hsl(233, 26%, 24%);
+  border-bottom: 3px solid hsl(137, 47%, 34%);
+}
+.about-menu {
+  width: 75%;
+  padding: 2rem;
+  margin: 0 auto;
+  color: hsl(233, 26%, 24%);
+  display: flex;
+  flex-direction: row;
+}
+.about-menu h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  color: hsl(137, 47%, 34%);
+}
+.about-menu p {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+.about-menu h3 {
+  font-size: 2.5rem;
+  color: hsl(137, 47%, 34%);
+  margin-bottom: 1rem;
+}
+.about-menu li {
+  font-size: 2rem;
+  list-style-type: square;
+}
+.image h1 {
+  display: none;
+}
+img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.contact-section {
+  width: 75%;
+  margin: 2rem auto;
+  color: hsl(233, 26%, 24%);
+}
+.contact-section div {
+  background-color: white;
+  padding: 2rem 3rem;
+}
+.contact-section h2 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  color: hsl(137, 47%, 34%);
+}
+.label {
+  font-size: 1.5rem;
+}
+#name,
+#email,
+#priority {
+  width: 400px;
+  height: 30px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(118, 118, 118);
+  margin-bottom: 1rem;
+}
+#mssg {
+  width: 400px;
+  box-sizing: border-box;
+}
+.contact-section button {
+  padding: 1rem 5rem;
+  margin-top: 1.5rem;
+  background-color: hsl(137, 47%, 34%);
+  border: none;
+  color: white;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: hsl(233, 26%, 24%);
+  transition: background-color 5000s ease-in-out 0s;
+  border: 1px solid rgb(118, 118, 118);
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.login-section,
+.register-section {
+  width: 500px;
+  padding: 2rem;
+  margin: 7vh auto;
+  color: hsl(233, 26%, 24%);
+}
+.register-section {
+  margin: 0 auto;
+}
+.login-section div {
+  width: 100%;
+  box-sizing: border-box;
+}
+.login-section h2,
+.register-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+.login-section input,
+.register-section input {
+  box-sizing: border-box;
+  padding: 0 1rem;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1.2rem;
+}
+.register-section select {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1.2rem;
+}
+.login-section button,
+.register-section button {
+  padding: 1.5rem;
+  height: 50px;
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: hsl(137, 47%, 34%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.hamburger {
+  display: None;
+}
+.check {
+  display: none;
+}
+.calculator-section {
+  width: 500px;
+  margin: 7vh auto;
+  color: hsl(233, 26%, 24%);
+}
+.title {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.content {
+  border: 10px solid hsl(139, 86%, 19%);
+  width: 500px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.calculator-section table {
+  width: 100%;
+  color: white;
+}
+.calculator-section td {
+  font-size: 20px;
+  width: 25%;
+  height: 100px;
+  text-align: center;
+}
+.container button {
+  padding: 5px 49px;
+  border: 1px solid white;
+  background-color: hsl(137, 47%, 34%);
+  color: white;
+}
+.display {
+  width: 75%;
+  height: 70px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    margin-top: 0;
+  }
+  .story h1 {
+    display: none;
+  }
+  .image h1 {
+    display: block;
+  }
+  .image {
+    order: 1;
+    margin: auto;
+    text-align: center;
+  }
+  .story {
+    order: 2;
+  }
+}
+@media screen and (max-width: 650px) {
+  .login-section,
+  .register-section {
+    width: 90%;
+  }
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 8%;
+    cursor: pointer;
+  }
+  .hamburger .menu {
+    width: 3rem;
+    border-radius: 0%;
+    margin: 0;
+    height: 2rem;
+  }
+  .nav-ul {
+    flex-direction: column;
+    position: absolute;
+    width: 60%;
+    right: 20%;
+    padding: 1rem 0;
+    margin-top: 6rem;
+    background-color: white;
+    border: 1px solid hsl(137, 47%, 34%);
+    border-radius: 0.3rem;
+    transform: translateY(-200%);
+    transition: all 0.5s;
+    z-index: 999;
+  }
+  .nav-ul li {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+  }
+  .nav-ul a:hover {
+    border-bottom: none;
+    color: black;
+  }
+  .nav-ul li a:hover::before {
+    opacity: 0;
+  }
+  .calculator-section {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 7vh 5%;
+  }
+  .content {
+    width: 95%;
+  }
+  .container button {
+    padding: 0;
+    width: 25%;
+  }
+
+  /* SLIDE MENU WHEN HAMBURGER IS CLICKED */
+  #toggle:checked ~ .nav-ul {
+    transform: translateY(0%);
+  }
+  #toggle:checked ~ .hamburger {
+    border: 1px solid red;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+  }
+  #name,
+  #email,
+  #priority,
+  #mssg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .image h1 {
+    font-size: 2.5rem;
+  }
+  .about-menu p,
+  .about-menu li {
+    font-size: 1.6rem;
+  }
+  .about-menu h3,
+  .contact-section h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .contact-section button {
+    padding: 1rem 3rem;
+  }
+  .hamburger .menu {
+    width: 2rem;
+  }
+}

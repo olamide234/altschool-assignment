@@ -2,73 +2,78 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <ul class="nav-ul" id="nav-ul">
-                    <li class="nav-li"><a href="#">Home</a></li>
-                    <li class="nav-li"><a href="#contact-section">Contact</a></li>
-                    <li class="nav-li"><a href="./login.html">Login</a></li>
-                    <li class="nav-li"><a href="./register.html">Register</a></li>
-                    <li class="nav-li"><a href="#calculator">Calculator</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <label for="toggle" class=hamburger>
+                <img class="menu" src="images/icon-hamburger.svg" alt="hamburger-icon">
+            </label>
+            <input type="checkbox" class="check" id="toggle">
+
+            <ul class="nav-ul" id="nav-ul">
+                <li class="nav-li"><a href="#">Home</a></li>
+                <li class="nav-li"><a href="#contact-section">Contact</a></li>
+                <li class="nav-li"><a href="./login.html">Login</a></li>
+                <li class="nav-li"><a href="./register.html">Register</a></li>
+                <li class="nav-li"><a href="./calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
     </header>
-  <h1>ABOUT ME</h1>
-  <p>I am Olamide Tofade. I am training to be a software developer. I joined the Altschool Africa to bring me closer to achieving my goal
-       of one day be proud of software programs i have written and therealso connect with the Tech community. </p>
-    <h3>Education</h3>
-    <p>Bachelor OF Science (BSC.) in Microbiology, Obafemi Awolowo University(OAU) (2015 - 2019)</p>
-    <h3>JOB EXPERIENCE</h3>
-    <p>Backend Engineer at Zuri (2021)</p>
-    <h3>HOBBIES AND OTHER SKILLS</h3>
-    <p>Reading</p>
-    <p>Outdoor activities and sightseeing</p>
+    <section class="about-menu">
+        <div class="story">
+            <h1>ABOUT ME</h1>
+            <p>I am Olamide Tofade. I am training to be a software developer. I joined the Altschool Africa to bring me
+                closer to achieving my goal
+                of one day be proud of software programs i have written and therealso connect with the Tech community.
+            </p>
 
-    <section class="contact-section" id="contact-section">
-    <form >
-        <label htmlFor="name" >Name</label>
-        <br></br>
-        <input  
-          id="name"
-          name="name"
-          type="text"
-          required
-        /><br><br>
-        <label htmlFor="email" >Email</label>
-        <br></br>
-        <input  
-          id="email"
-          name="email"
-          type="text"
-          required
-        /><br><br>
-        <label htmlFor="mssg" >Message</label>
-        <br></br>
-        <input  
-          id="mssg"
-          name="mssg"
-          type="text"
-          required
-          placeholder="Write your message..."
-        /><br><br>
+            <h3>Education</h3>
+            <p>Bachelor OF Science (BSC.) in Microbiology, Obafemi Awolowo University(OAU) (2015 - 2019)</p>
+            <h3>Job Experience</h3>
+            <p>Backend Engineer at Zuri (2021)</p>
+            <h3>Hobbies and other Skills</h3>
+            <li>Reading</li>
+            <li>Outdoor activities and sightseeing</li>
+        </div>
+        <div class="image">
+            <h1>ABOUT ME</h1>
+            <img class="picture" src="images/dp.jpg" alt="Profile picture" />
+        </div>
+    </section>
 
-        <label htmlFor="priority">Priority</label>
-        <br></br>
-        <select id="priority" name="priority">
-            <option value="important">Important</option>
-            <option value="urgent">Urgent</option>
-        </select><br></br>
-        <button>Send</button>
-      </form>
+    <section class="contact-section">
+        <div>
+            <h2>CONTACT ME</h2>
+            <form>
+                <label htmlFor="name" class="label">Name:</label>
+                <br></br>
+                <input id="name" name="name" type="text" required /><br><br>
+
+                <label htmlFor="email" class="label">Email:</label>
+                <br></br>
+                <input id="email" name="email" type="text" required /><br><br>
+
+                <label htmlFor="mssg" class="label">Message:</label>
+                <br></br>
+                <textarea id="mssg" name="mssg" rows="6" cols="50" required
+                    placeholder="Write your message..."></textarea><br><br>
+
+                <label htmlFor="priority" class="label">Priority:</label>
+                <br></br>
+                <select id="priority" name="priority">
+                    <option value="important">Important</option>
+                    <option value="urgent">Urgent</option>
+                </select><br></br>
+
+                <button>Send</button>
+            </form>
+        </div>
     </section>
 </body>
 

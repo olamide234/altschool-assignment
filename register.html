@@ -2,114 +2,75 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <ul class="nav-ul" id="nav-ul">
-                    <li class="nav-li"><a href="./index.html">Home</a></li>
-                    <li class="nav-li"><a href="./index.html#contact-section">Contact</a></li>
-                    <li class="nav-li"><a href="./login.html">Login</a></li>
-                    <li class="nav-li"><a href="#">Register</a></li>
-                    <li class="nav-li"><a href="./calculator.html">Calculator</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <label for="toggle" class=hamburger>
+                <img class="menu" src="images/icon-hamburger.svg" alt="hamburger-icon">
+            </label>
+            <input type="checkbox" class="check" id="toggle">
+
+            <ul class="nav-ul" id="nav-ul">
+                <li class="nav-li"><a href="./index.html">Home</a></li>
+                <li class="nav-li"><a href="./index.html#contact-section">Contact</a></li>
+                <li class="nav-li"><a href="./login.html">Login</a></li>
+                <li class="nav-li"><a href="./register.html">Register</a></li>
+                <li class="nav-li"><a href="./calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <form >
-        <label htmlFor="fname">First Name</label>
-        <br></br>
-        <input  
-          id="fname"
-          name="fname"
-          type="text"
-          required
-          placeholder="First Name"
-        /><br></br>
+    <section class="register-section" id="register-section">
+        <h2>Create a new account</h2>
+        <form>
+            <label htmlFor="fname" class="label">First Name</label>
+            <br></br>
+            <input id="fname" name="fname" type="text" required placeholder="First Name" /><br></br>
 
-        <label htmlFor="lname">Last Name</label>
-        <br></br>
-        <input  
-          id="lname"
-          name="lname"
-          type="text"
-          required
-          placeholder="Last Name"
-        /><br></br>
+            <label htmlFor="lname" class="label">Last Name</label>
+            <br></br>
+            <input id="lname" name="lname" type="text" required placeholder="Last Name" /><br></br>
 
-        <label htmlFor="phone">Phone</label>
-        <br></br>
-        <input  
-          id="phone"
-          name="phone"
-          type="text"
-          required
-          placeholder="Phone Number"
-        /><br></br>
+            <label htmlFor="phone" class="label">Phone</label>
+            <br></br>
+            <input id="phone" name="phone" type="text" required placeholder="Phone Number" /><br></br>
 
-        <label htmlFor="gender">Gender</label>
-        <br></br>
-        <select id="gender" name="gender">
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-        </select><br></br>
-        
-        <label htmlFor="country">Country</label>
-        <br></br>
-        <input  
-          id="country"
-          name="country"
-          type="text"
-          required
-        /><br></br>
+            <label htmlFor="gender" class="label">Gender</label>
+            <br></br>
+            <select id="gender" name="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select><br></br>
 
-        <label htmlFor="state">State/province</label>
-        <br></br>
-        <input  
-          id="state"
-          name="state"
-          type="text"
-          required
-        /><br></br>
+            <label htmlFor="country" class="label">Country</label>
+            <br></br>
+            <input id="country" name="country" type="text" required /><br></br>
 
-        <label htmlFor="uname" >Username</label>
-        <br></br>
-        <input  
-          id="uname"
-          name="uname"
-          type="text"
-          required
-          placeholder="username"
-        /><br></br>
+            <label htmlFor="state" class="label">State/province</label>
+            <br></br>
+            <input id="state" name="state" type="text" required /><br></br>
 
-        <label htmlFor="password">Password</label> 
-        <br></br>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          required
-          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
-        /><br></br>
+            <label htmlFor="uname" class="label">Username</label>
+            <br></br>
+            <input id="uname" name="uname" type="text" required placeholder="username" /><br></br>
 
-        <label htmlFor="cpassword">Confirm Password</label>
-        <br></br>
-        <input  
-          id="cpassword"
-          name="cpassword"
-          type="password"
-          required
-          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
-        /><br></br>
-        <button>Sign up</button>
-      </form>
+            <label htmlFor="password" class="label">Password</label>
+            <br></br>
+            <input id="password" name="password" type="password" required
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" /><br></br>
+
+            <label htmlFor="cpassword" class="label">Confirm Password</label>
+            <br></br>
+            <input id="cpassword" name="cpassword" type="password" required
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" /><br></br>
+            <button>Sign up</button>
+        </form>
     </section>
 </body>
 
